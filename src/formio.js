@@ -7,7 +7,7 @@ module.exports = function(options) {
     return options.formio;
   }
 
-  options.server = options.server || 'https://form.io';
+  options.server = options.server;
   var parts = options.server.split('://');
   options.protocol = options.protocol || parts[0];
   options.host = options.host || parts[1];
